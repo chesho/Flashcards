@@ -16,7 +16,7 @@ body::after {
     z-index: -2;
 }
 
-.header {
+header {
     font-family: "Montserrat", sans-serif;
     justify-self: center;
 }
