@@ -41,24 +41,10 @@ header {
     perspective: 60vw;
 }
 
-.cards-container span {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    background-color: teal;
-}
-
 .card {
     font-family: "Montserrat", sans-serif;
     transition: all 0.5s linear;
     transform-style: preserve-3d;
-}
-
-.card ul {
-    list-style-position: inside;
-    margin-left: 10px;
-    margin-top: 10%;
 }
 
 .front,
@@ -78,17 +64,33 @@ header {
     box-shadow: 0 2px 5px dimgray;
 }
 
-.back {
+.front span {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: teal;
+}
+
+.back {
+    display: block;
     color: black;
     text-align: left;
     font-size: 16px;
-    background-color: antiquewhite;
+    background-color: rgb(223, 243, 243);
     transform: rotateY(180deg);
     backface-visibility: hidden;
     box-shadow: 0 2px 3px dimgray;
+}
+
+.back h3 {
+    margin-top: 20px;
+}
+
+.back ul {
+    list-style-position: inside;
+    margin-left: 10px;
+    margin-top: 10%;
 }
     
 .card:hover {
